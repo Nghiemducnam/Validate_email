@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var str= prompt("Nhập email của bạn tại đây: ");
+        function checkRegular(str) {
+            var rule= /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+            if(rule.test(str)) {
+                alert('email ' + str + ' hợp lệ')
+            }else {
+                alert('email '  + str + ' không hợp lệ')
+            }
+        }
+        checkRegular(str)
+    </script>
+
+</body>
+</html>
